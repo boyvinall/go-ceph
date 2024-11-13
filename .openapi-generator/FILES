@@ -382,8 +382,6 @@ docs/UserAPI.md
 docs/UserChangePasswordAPI.md
 docs/UserPasswordPolicyAPI.md
 git_push.sh
-go.mod
-go.sum
 model__api_auth_check_post_201_response.go
 model__api_auth_check_post_request.go
 model__api_auth_post_201_response.go
