@@ -12,7 +12,7 @@ generate: clean-generated
 		--git-repo-id go-ceph \
 		--package-name ceph \
 		-t /local/templates \
-		--additional-properties=withGoMod=false,packageVersion=${VERSION},httpUserAgent=boyvinall/go-ceph/${VERSION}
+		--additional-properties=withGoMod=false,packageVersion=${VERSION},httpUserAgent=boyvinall/go-ceph/${VERSION},apiURL=https://ceph.example.com
 
 .PHONY: clean-generated
 clean-generated:
