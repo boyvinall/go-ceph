@@ -21,7 +21,7 @@ var _ MappedNullable = &ApiAuthCheckPost201Response{}
 
 // ApiAuthCheckPost201Response struct for ApiAuthCheckPost201Response
 type ApiAuthCheckPost201Response struct {
-	Permissions ApiAuthPost201ResponsePermissions `json:"permissions"`
+	Permissions ApiAuthCheckPost201ResponsePermissions `json:"permissions"`
 	// Is password update required?
 	PwdUpdateRequired bool `json:"pwdUpdateRequired"`
 	// Uses single sign on?
@@ -36,7 +36,7 @@ type _ApiAuthCheckPost201Response ApiAuthCheckPost201Response
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewApiAuthCheckPost201Response(permissions ApiAuthPost201ResponsePermissions, pwdUpdateRequired bool, sso bool, username string) *ApiAuthCheckPost201Response {
+func NewApiAuthCheckPost201Response(permissions ApiAuthCheckPost201ResponsePermissions, pwdUpdateRequired bool, sso bool, username string) *ApiAuthCheckPost201Response {
 	this := ApiAuthCheckPost201Response{}
 	this.Permissions = permissions
 	this.PwdUpdateRequired = pwdUpdateRequired
@@ -54,9 +54,9 @@ func NewApiAuthCheckPost201ResponseWithDefaults() *ApiAuthCheckPost201Response {
 }
 
 // GetPermissions returns the Permissions field value
-func (o *ApiAuthCheckPost201Response) GetPermissions() ApiAuthPost201ResponsePermissions {
+func (o *ApiAuthCheckPost201Response) GetPermissions() ApiAuthCheckPost201ResponsePermissions {
 	if o == nil {
-		var ret ApiAuthPost201ResponsePermissions
+		var ret ApiAuthCheckPost201ResponsePermissions
 		return ret
 	}
 
@@ -65,7 +65,7 @@ func (o *ApiAuthCheckPost201Response) GetPermissions() ApiAuthPost201ResponsePer
 
 // GetPermissionsOk returns a tuple with the Permissions field value
 // and a boolean to check if the value has been set.
-func (o *ApiAuthCheckPost201Response) GetPermissionsOk() (*ApiAuthPost201ResponsePermissions, bool) {
+func (o *ApiAuthCheckPost201Response) GetPermissionsOk() (*ApiAuthCheckPost201ResponsePermissions, bool) {
 	if o == nil {
 		return nil, false
 	}
@@ -73,7 +73,7 @@ func (o *ApiAuthCheckPost201Response) GetPermissionsOk() (*ApiAuthPost201Respons
 }
 
 // SetPermissions sets field value
-func (o *ApiAuthCheckPost201Response) SetPermissions(v ApiAuthPost201ResponsePermissions) {
+func (o *ApiAuthCheckPost201Response) SetPermissions(v ApiAuthCheckPost201ResponsePermissions) {
 	o.Permissions = v
 }
 

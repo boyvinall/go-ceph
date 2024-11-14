@@ -402,12 +402,16 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [ApiAuthCheckPost201Response](docs/ApiAuthCheckPost201Response.md)
+ - [ApiAuthCheckPost201ResponsePermissions](docs/ApiAuthCheckPost201ResponsePermissions.md)
  - [ApiAuthCheckPostRequest](docs/ApiAuthCheckPostRequest.md)
  - [ApiAuthPost201Response](docs/ApiAuthPost201Response.md)
  - [ApiAuthPost201ResponsePermissions](docs/ApiAuthPost201ResponsePermissions.md)
  - [ApiAuthPostRequest](docs/ApiAuthPostRequest.md)
  - [ApiBlockImageGet200ResponseInner](docs/ApiBlockImageGet200ResponseInner.md)
  - [ApiBlockImageImageSpecCopyPostRequest](docs/ApiBlockImageImageSpecCopyPostRequest.md)
+ - [ApiBlockImageImageSpecGet200Response](docs/ApiBlockImageImageSpecGet200Response.md)
+ - [ApiBlockImageImageSpecGet200ResponseConfigurationInner](docs/ApiBlockImageImageSpecGet200ResponseConfigurationInner.md)
+ - [ApiBlockImageImageSpecGet200ResponseSnapshotsInner](docs/ApiBlockImageImageSpecGet200ResponseSnapshotsInner.md)
  - [ApiBlockImageImageSpecMoveTrashPostRequest](docs/ApiBlockImageImageSpecMoveTrashPostRequest.md)
  - [ApiBlockImageImageSpecPutRequest](docs/ApiBlockImageImageSpecPutRequest.md)
  - [ApiBlockImageImageSpecSnapPostRequest](docs/ApiBlockImageImageSpecSnapPostRequest.md)

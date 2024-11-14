@@ -634,7 +634,7 @@ func (r ApiApiBlockImageImageSpecGetRequest) OmitUsage(omitUsage bool) ApiApiBlo
 	return r
 }
 
-func (r ApiApiBlockImageImageSpecGetRequest) Execute() ([]ApiBlockImageGet200ResponseInner, *http.Response, error) {
+func (r ApiApiBlockImageImageSpecGetRequest) Execute() (*ApiBlockImageImageSpecGet200Response, *http.Response, error) {
 	return r.ApiService.ApiBlockImageImageSpecGetExecute(r)
 }
 
@@ -654,13 +654,13 @@ func (a *RbdAPIService) ApiBlockImageImageSpecGet(ctx context.Context, imageSpec
 }
 
 // Execute executes the request
-//  @return []ApiBlockImageGet200ResponseInner
-func (a *RbdAPIService) ApiBlockImageImageSpecGetExecute(r ApiApiBlockImageImageSpecGetRequest) ([]ApiBlockImageGet200ResponseInner, *http.Response, error) {
+//  @return ApiBlockImageImageSpecGet200Response
+func (a *RbdAPIService) ApiBlockImageImageSpecGetExecute(r ApiApiBlockImageImageSpecGetRequest) (*ApiBlockImageImageSpecGet200Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodGet
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  []ApiBlockImageGet200ResponseInner
+		localVarReturnValue  *ApiBlockImageImageSpecGet200Response
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "RbdAPIService.ApiBlockImageImageSpecGet")

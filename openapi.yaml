@@ -47,8 +47,88 @@ paths:
                         items:
                           type: string
                         type: array
+                      config-opt:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      dashboard-settings:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      grafana:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      hosts:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      iscsi:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      log:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      manager:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      monitor:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      nfs-ganesha:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      osd:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      pool:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      prometheus:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      rbd-image:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      rbd-mirroring:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      rgw:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
+                      user:
+                        description: ''
+                        items:
+                          type: string
+                        type: array
                     required:
-                    - cephfs
+                    - cephfs # TODO - which permissions actually are required?
                     type: object
                   pwdExpirationDate:
                     description: Password expiration date
@@ -584,21 +664,127 @@ paths:
           content:
             application/vnd.ceph.api.v1.0+json:
               schema:
-                items:
-                  properties:
-                    pool_name:
-                      description: pool name
+                type: object
+                properties:
+                  size:
+                    description: ''
+                    type: number
+                    format: int64
+                  obj_size:
+                    description: ''
+                    type: integer
+                  num_objs:
+                    description: ''
+                    type: integer
+                  order:
+                    description: ''
+                    type: integer
+                  block_name_prefix:
+                    description: ''
+                    type: string
+                  name:
+                    description: ''
+                    type: string
+                  unique_id:
+                    description: ''
+                    type: string
+                  id:
+                    description: ''
+                    type: string
+                  image_format:
+                    description: ''
+                    type: integer
+                  pool_name:
+                    description: ''
+                    type: string
+                  namespace:
+                    description: ''
+                    type: string # TODO - this is just a placeholder, check this
+                  features:
+                    description: ''
+                    type: integer
+                  features_name:
+                    description: ''
+                    type: array
+                    items:
                       type: string
-                    value:
-                      description: ''
-                      items:
-                        type: string
-                      type: array
-                  type: object
-                required:
-                - value
-                - pool_name
-                type: array
+                  timestamp:
+                    description: ''
+                    type: string
+                  stripe_count:
+                    description: ''
+                    type: integer
+                  stripe_unit:
+                    description: ''
+                    type: integer
+                  data_pool:
+                    description: ''
+                    type: string  # TODO - this is just a placeholder, check this
+                    nullable: true
+                  parent:
+                    description: ''
+                    type: string  # TODO - this is just a placeholder, check this
+                    nullable: true
+                  snapshots:
+                    description: ''
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          description: ''
+                          type: integer
+                        size:
+                          description: ''
+                          type: number
+                          format: int64
+                        name:
+                          description: ''
+                          type: string
+                        namespace:
+                          description: ''
+                          type: integer
+                        timestamp:
+                          description: ''
+                          type: string
+                        is_protected:
+                          description: ''
+                          type: boolean
+                        used_bytes:
+                          description: ''
+                          type: integer
+                          nullable: true
+                        children:
+                          description: ''
+                          type: array
+                          items:
+                            type: integer # TODO - this is just a placeholder, should probably be an object
+                        disk_usage:
+                          description: ''
+                          type: number
+                          format: int64
+                  total_disk_usage:
+                    description: ''
+                    type: number
+                    format: int64
+                  disk_usage:
+                    description: ''
+                    type: integer
+                  configuration:
+                    description: ''
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          description: ''
+                          type: string
+                        value:
+                          description: ''
+                          type: string
+                        source:
+                          description: ''
+                          type: integer
           description: OK
         '400':
           description: Operation exception. Please check the response body for details.

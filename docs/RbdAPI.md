@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ## ApiBlockImageImageSpecGet
 
-> []ApiBlockImageGet200ResponseInner ApiBlockImageImageSpecGet(ctx, imageSpec).OmitUsage(omitUsage).Execute()
+> ApiBlockImageImageSpecGet200Response ApiBlockImageImageSpecGet(ctx, imageSpec).OmitUsage(omitUsage).Execute()
 
 Get Rbd Image Info
 
@@ -434,7 +434,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error when calling `RbdAPI.ApiBlockImageImageSpecGet``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
 	}
-	// response from `ApiBlockImageImageSpecGet`: []ApiBlockImageGet200ResponseInner
+	// response from `ApiBlockImageImageSpecGet`: ApiBlockImageImageSpecGet200Response
 	fmt.Fprintf(os.Stdout, "Response from `RbdAPI.ApiBlockImageImageSpecGet`: %v\n", resp)
 }
 ```
@@ -459,7 +459,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]ApiBlockImageGet200ResponseInner**](ApiBlockImageGet200ResponseInner.md)
+[**ApiBlockImageImageSpecGet200Response**](ApiBlockImageImageSpecGet200Response.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Permissions** | [**ApiAuthPost201ResponsePermissions**](ApiAuthPost201ResponsePermissions.md) |  | 
+**Permissions** | [**ApiAuthCheckPost201ResponsePermissions**](ApiAuthCheckPost201ResponsePermissions.md) |  | 
 **PwdUpdateRequired** | **bool** | Is password update required? | 
 **Sso** | **bool** | Uses single sign on? | 
 **Username** | **string** | Username | 
@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 
 ### NewApiAuthCheckPost201Response
 
-`func NewApiAuthCheckPost201Response(permissions ApiAuthPost201ResponsePermissions, pwdUpdateRequired bool, sso bool, username string, ) *ApiAuthCheckPost201Response`
+`func NewApiAuthCheckPost201Response(permissions ApiAuthCheckPost201ResponsePermissions, pwdUpdateRequired bool, sso bool, username string, ) *ApiAuthCheckPost201Response`
 
 NewApiAuthCheckPost201Response instantiates a new ApiAuthCheckPost201Response object
 This constructor will assign default values to properties that have it defined,
@@ -30,20 +30,20 @@ but it doesn't guarantee that properties required by API are set
 
 ### GetPermissions
 
-`func (o *ApiAuthCheckPost201Response) GetPermissions() ApiAuthPost201ResponsePermissions`
+`func (o *ApiAuthCheckPost201Response) GetPermissions() ApiAuthCheckPost201ResponsePermissions`
 
 GetPermissions returns the Permissions field if non-nil, zero value otherwise.
 
 ### GetPermissionsOk
 
-`func (o *ApiAuthCheckPost201Response) GetPermissionsOk() (*ApiAuthPost201ResponsePermissions, bool)`
+`func (o *ApiAuthCheckPost201Response) GetPermissionsOk() (*ApiAuthCheckPost201ResponsePermissions, bool)`
 
 GetPermissionsOk returns a tuple with the Permissions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetPermissions
 
-`func (o *ApiAuthCheckPost201Response) SetPermissions(v ApiAuthPost201ResponsePermissions)`
+`func (o *ApiAuthCheckPost201Response) SetPermissions(v ApiAuthCheckPost201ResponsePermissions)`
 
 SetPermissions sets Permissions field to given value.
 

@@ -596,12 +596,7 @@ paths:
           content:
             application/vnd.ceph.api.v1.0+json:
               schema:
-                items:
-                  $ref: '#/components/schemas/_api_block_image_get_200_response_inner'
-                required:
-                - pool_name
-                - value
-                type: array
+                $ref: '#/components/schemas/_api_block_image__image_spec__get_200_response'
           description: OK
         "400":
           description: Operation exception. Please check the response body for details.
@@ -11097,6 +11092,18 @@ paths:
       - UserChangePassword
 components:
   schemas:
+    _api_block_image__image_spec__get_200_response_configuration_inner:
+      properties:
+        name:
+          description: ""
+          type: string
+        value:
+          description: ""
+          type: string
+        source:
+          description: ""
+          type: integer
+      type: object
     _api_host__hostname__inventory_get_200_response_devices_inner_sys_api_partitions_partition_name:
       description: ""
       properties:
@@ -12933,6 +12940,41 @@ components:
       - rejected_reasons
       - sys_api
       type: object
+    _api_block_image__image_spec__get_200_response_snapshots_inner:
+      properties:
+        id:
+          description: ""
+          type: integer
+        size:
+          description: ""
+          format: int64
+          type: number
+        name:
+          description: ""
+          type: string
+        namespace:
+          description: ""
+          type: integer
+        timestamp:
+          description: ""
+          type: string
+        is_protected:
+          description: ""
+          type: boolean
+        used_bytes:
+          description: ""
+          nullable: true
+          type: integer
+        children:
+          description: ""
+          items:
+            type: integer
+          type: array
+        disk_usage:
+          description: ""
+          format: int64
+          type: number
+      type: object
     _api_pool_get_200_response_inner_hit_set_params:
       description: ""
       properties:
@@ -13371,6 +13413,85 @@ components:
       - security_label
       - squash
       - transports
+      type: object
+    _api_block_image__image_spec__get_200_response:
+      properties:
+        size:
+          description: ""
+          format: int64
+          type: number
+        obj_size:
+          description: ""
+          type: integer
+        num_objs:
+          description: ""
+          type: integer
+        order:
+          description: ""
+          type: integer
+        block_name_prefix:
+          description: ""
+          type: string
+        name:
+          description: ""
+          type: string
+        unique_id:
+          description: ""
+          type: string
+        id:
+          description: ""
+          type: string
+        image_format:
+          description: ""
+          type: integer
+        pool_name:
+          description: ""
+          type: string
+        namespace:
+          description: ""
+          type: string
+        features:
+          description: ""
+          type: integer
+        features_name:
+          description: ""
+          items:
+            type: string
+          type: array
+        timestamp:
+          description: ""
+          type: string
+        stripe_count:
+          description: ""
+          type: integer
+        stripe_unit:
+          description: ""
+          type: integer
+        data_pool:
+          description: ""
+          nullable: true
+          type: string
+        parent:
+          description: ""
+          nullable: true
+          type: string
+        snapshots:
+          description: ""
+          items:
+            $ref: '#/components/schemas/_api_block_image__image_spec__get_200_response_snapshots_inner'
+          type: array
+        total_disk_usage:
+          description: ""
+          format: int64
+          type: number
+        disk_usage:
+          description: ""
+          type: integer
+        configuration:
+          description: ""
+          items:
+            $ref: '#/components/schemas/_api_block_image__image_spec__get_200_response_configuration_inner'
+          type: array
       type: object
     _api_multi_cluster_reconnect_cluster_put_request:
       properties:
@@ -13982,6 +14103,86 @@ components:
       description: List of permissions acquired
       properties:
         cephfs:
+          description: ""
+          items:
+            type: string
+          type: array
+        config-opt:
+          description: ""
+          items:
+            type: string
+          type: array
+        dashboard-settings:
+          description: ""
+          items:
+            type: string
+          type: array
+        grafana:
+          description: ""
+          items:
+            type: string
+          type: array
+        hosts:
+          description: ""
+          items:
+            type: string
+          type: array
+        iscsi:
+          description: ""
+          items:
+            type: string
+          type: array
+        log:
+          description: ""
+          items:
+            type: string
+          type: array
+        manager:
+          description: ""
+          items:
+            type: string
+          type: array
+        monitor:
+          description: ""
+          items:
+            type: string
+          type: array
+        nfs-ganesha:
+          description: ""
+          items:
+            type: string
+          type: array
+        osd:
+          description: ""
+          items:
+            type: string
+          type: array
+        pool:
+          description: ""
+          items:
+            type: string
+          type: array
+        prometheus:
+          description: ""
+          items:
+            type: string
+          type: array
+        rbd-image:
+          description: ""
+          items:
+            type: string
+          type: array
+        rbd-mirroring:
+          description: ""
+          items:
+            type: string
+          type: array
+        rgw:
+          description: ""
+          items:
+            type: string
+          type: array
+        user:
           description: ""
           items:
             type: string
@@ -15254,7 +15455,7 @@ components:
     _api_auth_check_post_201_response:
       properties:
         permissions:
-          $ref: '#/components/schemas/_api_auth_post_201_response_permissions'
+          $ref: '#/components/schemas/_api_auth_check_post_201_response_permissions'
         pwdUpdateRequired:
           description: Is password update required?
           type: boolean
@@ -15269,6 +15470,17 @@ components:
       - pwdUpdateRequired
       - sso
       - username
+      type: object
+    _api_auth_check_post_201_response_permissions:
+      description: List of permissions acquired
+      properties:
+        cephfs:
+          description: ""
+          items:
+            type: string
+          type: array
+      required:
+      - cephfs
       type: object
     _api_user_get_200_response:
       properties:

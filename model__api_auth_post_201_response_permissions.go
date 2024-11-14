@@ -23,6 +23,38 @@ var _ MappedNullable = &ApiAuthPost201ResponsePermissions{}
 type ApiAuthPost201ResponsePermissions struct {
 	// 
 	Cephfs []string `json:"cephfs"`
+	// 
+	ConfigOpt []string `json:"config-opt,omitempty"`
+	// 
+	DashboardSettings []string `json:"dashboard-settings,omitempty"`
+	// 
+	Grafana []string `json:"grafana,omitempty"`
+	// 
+	Hosts []string `json:"hosts,omitempty"`
+	// 
+	Iscsi []string `json:"iscsi,omitempty"`
+	// 
+	Log []string `json:"log,omitempty"`
+	// 
+	Manager []string `json:"manager,omitempty"`
+	// 
+	Monitor []string `json:"monitor,omitempty"`
+	// 
+	NfsGanesha []string `json:"nfs-ganesha,omitempty"`
+	// 
+	Osd []string `json:"osd,omitempty"`
+	// 
+	Pool []string `json:"pool,omitempty"`
+	// 
+	Prometheus []string `json:"prometheus,omitempty"`
+	// 
+	RbdImage []string `json:"rbd-image,omitempty"`
+	// 
+	RbdMirroring []string `json:"rbd-mirroring,omitempty"`
+	// 
+	Rgw []string `json:"rgw,omitempty"`
+	// 
+	User []string `json:"user,omitempty"`
 }
 
 type _ApiAuthPost201ResponsePermissions ApiAuthPost201ResponsePermissions
@@ -69,6 +101,518 @@ func (o *ApiAuthPost201ResponsePermissions) SetCephfs(v []string) {
 	o.Cephfs = v
 }
 
+// GetConfigOpt returns the ConfigOpt field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetConfigOpt() []string {
+	if o == nil || IsNil(o.ConfigOpt) {
+		var ret []string
+		return ret
+	}
+	return o.ConfigOpt
+}
+
+// GetConfigOptOk returns a tuple with the ConfigOpt field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetConfigOptOk() ([]string, bool) {
+	if o == nil || IsNil(o.ConfigOpt) {
+		return nil, false
+	}
+	return o.ConfigOpt, true
+}
+
+// HasConfigOpt returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasConfigOpt() bool {
+	if o != nil && !IsNil(o.ConfigOpt) {
+		return true
+	}
+
+	return false
+}
+
+// SetConfigOpt gets a reference to the given []string and assigns it to the ConfigOpt field.
+func (o *ApiAuthPost201ResponsePermissions) SetConfigOpt(v []string) {
+	o.ConfigOpt = v
+}
+
+// GetDashboardSettings returns the DashboardSettings field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetDashboardSettings() []string {
+	if o == nil || IsNil(o.DashboardSettings) {
+		var ret []string
+		return ret
+	}
+	return o.DashboardSettings
+}
+
+// GetDashboardSettingsOk returns a tuple with the DashboardSettings field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetDashboardSettingsOk() ([]string, bool) {
+	if o == nil || IsNil(o.DashboardSettings) {
+		return nil, false
+	}
+	return o.DashboardSettings, true
+}
+
+// HasDashboardSettings returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasDashboardSettings() bool {
+	if o != nil && !IsNil(o.DashboardSettings) {
+		return true
+	}
+
+	return false
+}
+
+// SetDashboardSettings gets a reference to the given []string and assigns it to the DashboardSettings field.
+func (o *ApiAuthPost201ResponsePermissions) SetDashboardSettings(v []string) {
+	o.DashboardSettings = v
+}
+
+// GetGrafana returns the Grafana field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetGrafana() []string {
+	if o == nil || IsNil(o.Grafana) {
+		var ret []string
+		return ret
+	}
+	return o.Grafana
+}
+
+// GetGrafanaOk returns a tuple with the Grafana field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetGrafanaOk() ([]string, bool) {
+	if o == nil || IsNil(o.Grafana) {
+		return nil, false
+	}
+	return o.Grafana, true
+}
+
+// HasGrafana returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasGrafana() bool {
+	if o != nil && !IsNil(o.Grafana) {
+		return true
+	}
+
+	return false
+}
+
+// SetGrafana gets a reference to the given []string and assigns it to the Grafana field.
+func (o *ApiAuthPost201ResponsePermissions) SetGrafana(v []string) {
+	o.Grafana = v
+}
+
+// GetHosts returns the Hosts field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetHosts() []string {
+	if o == nil || IsNil(o.Hosts) {
+		var ret []string
+		return ret
+	}
+	return o.Hosts
+}
+
+// GetHostsOk returns a tuple with the Hosts field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetHostsOk() ([]string, bool) {
+	if o == nil || IsNil(o.Hosts) {
+		return nil, false
+	}
+	return o.Hosts, true
+}
+
+// HasHosts returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasHosts() bool {
+	if o != nil && !IsNil(o.Hosts) {
+		return true
+	}
+
+	return false
+}
+
+// SetHosts gets a reference to the given []string and assigns it to the Hosts field.
+func (o *ApiAuthPost201ResponsePermissions) SetHosts(v []string) {
+	o.Hosts = v
+}
+
+// GetIscsi returns the Iscsi field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetIscsi() []string {
+	if o == nil || IsNil(o.Iscsi) {
+		var ret []string
+		return ret
+	}
+	return o.Iscsi
+}
+
+// GetIscsiOk returns a tuple with the Iscsi field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetIscsiOk() ([]string, bool) {
+	if o == nil || IsNil(o.Iscsi) {
+		return nil, false
+	}
+	return o.Iscsi, true
+}
+
+// HasIscsi returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasIscsi() bool {
+	if o != nil && !IsNil(o.Iscsi) {
+		return true
+	}
+
+	return false
+}
+
+// SetIscsi gets a reference to the given []string and assigns it to the Iscsi field.
+func (o *ApiAuthPost201ResponsePermissions) SetIscsi(v []string) {
+	o.Iscsi = v
+}
+
+// GetLog returns the Log field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetLog() []string {
+	if o == nil || IsNil(o.Log) {
+		var ret []string
+		return ret
+	}
+	return o.Log
+}
+
+// GetLogOk returns a tuple with the Log field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetLogOk() ([]string, bool) {
+	if o == nil || IsNil(o.Log) {
+		return nil, false
+	}
+	return o.Log, true
+}
+
+// HasLog returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasLog() bool {
+	if o != nil && !IsNil(o.Log) {
+		return true
+	}
+
+	return false
+}
+
+// SetLog gets a reference to the given []string and assigns it to the Log field.
+func (o *ApiAuthPost201ResponsePermissions) SetLog(v []string) {
+	o.Log = v
+}
+
+// GetManager returns the Manager field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetManager() []string {
+	if o == nil || IsNil(o.Manager) {
+		var ret []string
+		return ret
+	}
+	return o.Manager
+}
+
+// GetManagerOk returns a tuple with the Manager field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetManagerOk() ([]string, bool) {
+	if o == nil || IsNil(o.Manager) {
+		return nil, false
+	}
+	return o.Manager, true
+}
+
+// HasManager returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasManager() bool {
+	if o != nil && !IsNil(o.Manager) {
+		return true
+	}
+
+	return false
+}
+
+// SetManager gets a reference to the given []string and assigns it to the Manager field.
+func (o *ApiAuthPost201ResponsePermissions) SetManager(v []string) {
+	o.Manager = v
+}
+
+// GetMonitor returns the Monitor field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetMonitor() []string {
+	if o == nil || IsNil(o.Monitor) {
+		var ret []string
+		return ret
+	}
+	return o.Monitor
+}
+
+// GetMonitorOk returns a tuple with the Monitor field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetMonitorOk() ([]string, bool) {
+	if o == nil || IsNil(o.Monitor) {
+		return nil, false
+	}
+	return o.Monitor, true
+}
+
+// HasMonitor returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasMonitor() bool {
+	if o != nil && !IsNil(o.Monitor) {
+		return true
+	}
+
+	return false
+}
+
+// SetMonitor gets a reference to the given []string and assigns it to the Monitor field.
+func (o *ApiAuthPost201ResponsePermissions) SetMonitor(v []string) {
+	o.Monitor = v
+}
+
+// GetNfsGanesha returns the NfsGanesha field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetNfsGanesha() []string {
+	if o == nil || IsNil(o.NfsGanesha) {
+		var ret []string
+		return ret
+	}
+	return o.NfsGanesha
+}
+
+// GetNfsGaneshaOk returns a tuple with the NfsGanesha field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetNfsGaneshaOk() ([]string, bool) {
+	if o == nil || IsNil(o.NfsGanesha) {
+		return nil, false
+	}
+	return o.NfsGanesha, true
+}
+
+// HasNfsGanesha returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasNfsGanesha() bool {
+	if o != nil && !IsNil(o.NfsGanesha) {
+		return true
+	}
+
+	return false
+}
+
+// SetNfsGanesha gets a reference to the given []string and assigns it to the NfsGanesha field.
+func (o *ApiAuthPost201ResponsePermissions) SetNfsGanesha(v []string) {
+	o.NfsGanesha = v
+}
+
+// GetOsd returns the Osd field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetOsd() []string {
+	if o == nil || IsNil(o.Osd) {
+		var ret []string
+		return ret
+	}
+	return o.Osd
+}
+
+// GetOsdOk returns a tuple with the Osd field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetOsdOk() ([]string, bool) {
+	if o == nil || IsNil(o.Osd) {
+		return nil, false
+	}
+	return o.Osd, true
+}
+
+// HasOsd returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasOsd() bool {
+	if o != nil && !IsNil(o.Osd) {
+		return true
+	}
+
+	return false
+}
+
+// SetOsd gets a reference to the given []string and assigns it to the Osd field.
+func (o *ApiAuthPost201ResponsePermissions) SetOsd(v []string) {
+	o.Osd = v
+}
+
+// GetPool returns the Pool field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetPool() []string {
+	if o == nil || IsNil(o.Pool) {
+		var ret []string
+		return ret
+	}
+	return o.Pool
+}
+
+// GetPoolOk returns a tuple with the Pool field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetPoolOk() ([]string, bool) {
+	if o == nil || IsNil(o.Pool) {
+		return nil, false
+	}
+	return o.Pool, true
+}
+
+// HasPool returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasPool() bool {
+	if o != nil && !IsNil(o.Pool) {
+		return true
+	}
+
+	return false
+}
+
+// SetPool gets a reference to the given []string and assigns it to the Pool field.
+func (o *ApiAuthPost201ResponsePermissions) SetPool(v []string) {
+	o.Pool = v
+}
+
+// GetPrometheus returns the Prometheus field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetPrometheus() []string {
+	if o == nil || IsNil(o.Prometheus) {
+		var ret []string
+		return ret
+	}
+	return o.Prometheus
+}
+
+// GetPrometheusOk returns a tuple with the Prometheus field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetPrometheusOk() ([]string, bool) {
+	if o == nil || IsNil(o.Prometheus) {
+		return nil, false
+	}
+	return o.Prometheus, true
+}
+
+// HasPrometheus returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasPrometheus() bool {
+	if o != nil && !IsNil(o.Prometheus) {
+		return true
+	}
+
+	return false
+}
+
+// SetPrometheus gets a reference to the given []string and assigns it to the Prometheus field.
+func (o *ApiAuthPost201ResponsePermissions) SetPrometheus(v []string) {
+	o.Prometheus = v
+}
+
+// GetRbdImage returns the RbdImage field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetRbdImage() []string {
+	if o == nil || IsNil(o.RbdImage) {
+		var ret []string
+		return ret
+	}
+	return o.RbdImage
+}
+
+// GetRbdImageOk returns a tuple with the RbdImage field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetRbdImageOk() ([]string, bool) {
+	if o == nil || IsNil(o.RbdImage) {
+		return nil, false
+	}
+	return o.RbdImage, true
+}
+
+// HasRbdImage returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasRbdImage() bool {
+	if o != nil && !IsNil(o.RbdImage) {
+		return true
+	}
+
+	return false
+}
+
+// SetRbdImage gets a reference to the given []string and assigns it to the RbdImage field.
+func (o *ApiAuthPost201ResponsePermissions) SetRbdImage(v []string) {
+	o.RbdImage = v
+}
+
+// GetRbdMirroring returns the RbdMirroring field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetRbdMirroring() []string {
+	if o == nil || IsNil(o.RbdMirroring) {
+		var ret []string
+		return ret
+	}
+	return o.RbdMirroring
+}
+
+// GetRbdMirroringOk returns a tuple with the RbdMirroring field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetRbdMirroringOk() ([]string, bool) {
+	if o == nil || IsNil(o.RbdMirroring) {
+		return nil, false
+	}
+	return o.RbdMirroring, true
+}
+
+// HasRbdMirroring returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasRbdMirroring() bool {
+	if o != nil && !IsNil(o.RbdMirroring) {
+		return true
+	}
+
+	return false
+}
+
+// SetRbdMirroring gets a reference to the given []string and assigns it to the RbdMirroring field.
+func (o *ApiAuthPost201ResponsePermissions) SetRbdMirroring(v []string) {
+	o.RbdMirroring = v
+}
+
+// GetRgw returns the Rgw field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetRgw() []string {
+	if o == nil || IsNil(o.Rgw) {
+		var ret []string
+		return ret
+	}
+	return o.Rgw
+}
+
+// GetRgwOk returns a tuple with the Rgw field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetRgwOk() ([]string, bool) {
+	if o == nil || IsNil(o.Rgw) {
+		return nil, false
+	}
+	return o.Rgw, true
+}
+
+// HasRgw returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasRgw() bool {
+	if o != nil && !IsNil(o.Rgw) {
+		return true
+	}
+
+	return false
+}
+
+// SetRgw gets a reference to the given []string and assigns it to the Rgw field.
+func (o *ApiAuthPost201ResponsePermissions) SetRgw(v []string) {
+	o.Rgw = v
+}
+
+// GetUser returns the User field value if set, zero value otherwise.
+func (o *ApiAuthPost201ResponsePermissions) GetUser() []string {
+	if o == nil || IsNil(o.User) {
+		var ret []string
+		return ret
+	}
+	return o.User
+}
+
+// GetUserOk returns a tuple with the User field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ApiAuthPost201ResponsePermissions) GetUserOk() ([]string, bool) {
+	if o == nil || IsNil(o.User) {
+		return nil, false
+	}
+	return o.User, true
+}
+
+// HasUser returns a boolean if a field has been set.
+func (o *ApiAuthPost201ResponsePermissions) HasUser() bool {
+	if o != nil && !IsNil(o.User) {
+		return true
+	}
+
+	return false
+}
+
+// SetUser gets a reference to the given []string and assigns it to the User field.
+func (o *ApiAuthPost201ResponsePermissions) SetUser(v []string) {
+	o.User = v
+}
+
 func (o ApiAuthPost201ResponsePermissions) MarshalJSON() ([]byte, error) {
 	toSerialize,err := o.ToMap()
 	if err != nil {
@@ -80,6 +624,54 @@ func (o ApiAuthPost201ResponsePermissions) MarshalJSON() ([]byte, error) {
 func (o ApiAuthPost201ResponsePermissions) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	toSerialize["cephfs"] = o.Cephfs
+	if !IsNil(o.ConfigOpt) {
+		toSerialize["config-opt"] = o.ConfigOpt
+	}
+	if !IsNil(o.DashboardSettings) {
+		toSerialize["dashboard-settings"] = o.DashboardSettings
+	}
+	if !IsNil(o.Grafana) {
+		toSerialize["grafana"] = o.Grafana
+	}
+	if !IsNil(o.Hosts) {
+		toSerialize["hosts"] = o.Hosts
+	}
+	if !IsNil(o.Iscsi) {
+		toSerialize["iscsi"] = o.Iscsi
+	}
+	if !IsNil(o.Log) {
+		toSerialize["log"] = o.Log
+	}
+	if !IsNil(o.Manager) {
+		toSerialize["manager"] = o.Manager
+	}
+	if !IsNil(o.Monitor) {
+		toSerialize["monitor"] = o.Monitor
+	}
+	if !IsNil(o.NfsGanesha) {
+		toSerialize["nfs-ganesha"] = o.NfsGanesha
+	}
+	if !IsNil(o.Osd) {
+		toSerialize["osd"] = o.Osd
+	}
+	if !IsNil(o.Pool) {
+		toSerialize["pool"] = o.Pool
+	}
+	if !IsNil(o.Prometheus) {
+		toSerialize["prometheus"] = o.Prometheus
+	}
+	if !IsNil(o.RbdImage) {
+		toSerialize["rbd-image"] = o.RbdImage
+	}
+	if !IsNil(o.RbdMirroring) {
+		toSerialize["rbd-mirroring"] = o.RbdMirroring
+	}
+	if !IsNil(o.Rgw) {
+		toSerialize["rgw"] = o.Rgw
+	}
+	if !IsNil(o.User) {
+		toSerialize["user"] = o.User
+	}
 	return toSerialize, nil
 }
 
