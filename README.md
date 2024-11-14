@@ -74,7 +74,7 @@ ctx = context.WithValue(context.Background(), ceph.ContextOperationServerVariabl
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://raw.githubusercontent.com*
+All URIs are relative to *https://ceph.example.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

@@ -4,7 +4,7 @@ info:
   title: Ceph REST API
   version: v1
 servers:
-- url: https://raw.githubusercontent.com/
+- url: /
 tags:
 - description: Initiate a session with Ceph
   name: Auth

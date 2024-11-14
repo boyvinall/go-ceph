@@ -1,9 +1,14 @@
 VERSION=0.0.1
 
+# be careful updating this because the file is not really correct, so we have some local changes aiming to push upstream
+.PHONY: update-openapi
+update-openapi:
+	curl -LO https://raw.githubusercontent.com/ceph/ceph/refs/heads/main/src/pybind/mgr/dashboard/openapi.yaml
+
 .PHONY: generate
 generate: clean-generated
 	docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli:latest-release generate \
-		-i https://raw.githubusercontent.com/ceph/ceph/refs/heads/main/src/pybind/mgr/dashboard/openapi.yaml \
+		-i /local/openapi.yaml \
 		-g go \
 		-o /local \
 		--skip-validate-spec \
@@ -12,7 +17,10 @@ generate: clean-generated
 		--git-repo-id go-ceph \
 		--package-name ceph \
 		-t /local/templates \
-		--additional-properties=withGoMod=false,packageVersion=${VERSION},httpUserAgent=boyvinall/go-ceph/${VERSION},apiURL=https://ceph.example.com
+		--additional-properties=withGoMod=false \
+		--additional-properties=packageVersion=${VERSION} \
+		--additional-properties=httpUserAgent=boyvinall/go-ceph/${VERSION} \
+		--additional-properties=apiURL=https://ceph.example.com
 
 .PHONY: clean-generated
 clean-generated:
