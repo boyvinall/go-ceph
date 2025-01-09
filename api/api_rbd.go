@@ -236,7 +236,7 @@ func (r ApiApiBlockImageGetRequest) Sort(sort string) ApiApiBlockImageGetRequest
 	return r
 }
 
-func (r ApiApiBlockImageGetRequest) Execute() ([]ApiBlockImageGet200ResponseInner, *http.Response, error) {
+func (r ApiApiBlockImageGetRequest) Execute() ([]RbdImage, *http.Response, error) {
 	return r.ApiService.ApiBlockImageGetExecute(r)
 }
 
@@ -254,13 +254,13 @@ func (a *RbdAPIService) ApiBlockImageGet(ctx context.Context) ApiApiBlockImageGe
 }
 
 // Execute executes the request
-//  @return []ApiBlockImageGet200ResponseInner
-func (a *RbdAPIService) ApiBlockImageGetExecute(r ApiApiBlockImageGetRequest) ([]ApiBlockImageGet200ResponseInner, *http.Response, error) {
+//  @return []RbdImage
+func (a *RbdAPIService) ApiBlockImageGetExecute(r ApiApiBlockImageGetRequest) ([]RbdImage, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodGet
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  []ApiBlockImageGet200ResponseInner
+		localVarReturnValue  []RbdImage
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "RbdAPIService.ApiBlockImageGet")
@@ -299,7 +299,7 @@ func (a *RbdAPIService) ApiBlockImageGetExecute(r ApiApiBlockImageGetRequest) ([
 	}
 
 	// to determine the Accept header
-	localVarHTTPHeaderAccepts := []string{"application/vnd.ceph.api.v2.0+json"}
+	localVarHTTPHeaderAccepts := []string{"application/vnd.ceph.api.v1.0+json"}
 
 	// set Accept header
 	localVarHTTPHeaderAccept := selectHeaderAccept(localVarHTTPHeaderAccepts)
@@ -634,7 +634,7 @@ func (r ApiApiBlockImageImageSpecGetRequest) OmitUsage(omitUsage bool) ApiApiBlo
 	return r
 }
 
-func (r ApiApiBlockImageImageSpecGetRequest) Execute() (*ApiBlockImageImageSpecGet200Response, *http.Response, error) {
+func (r ApiApiBlockImageImageSpecGetRequest) Execute() (*RbdImage, *http.Response, error) {
 	return r.ApiService.ApiBlockImageImageSpecGetExecute(r)
 }
 
@@ -654,13 +654,13 @@ func (a *RbdAPIService) ApiBlockImageImageSpecGet(ctx context.Context, imageSpec
 }
 
 // Execute executes the request
-//  @return ApiBlockImageImageSpecGet200Response
-func (a *RbdAPIService) ApiBlockImageImageSpecGetExecute(r ApiApiBlockImageImageSpecGetRequest) (*ApiBlockImageImageSpecGet200Response, *http.Response, error) {
+//  @return RbdImage
+func (a *RbdAPIService) ApiBlockImageImageSpecGetExecute(r ApiApiBlockImageImageSpecGetRequest) (*RbdImage, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodGet
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  *ApiBlockImageImageSpecGet200Response
+		localVarReturnValue  *RbdImage
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "RbdAPIService.ApiBlockImageImageSpecGet")

@@ -1,5 +1,8 @@
 VERSION=0.0.1
 
+.PHONY: all
+all: generate
+
 # be careful updating this because the file is not really correct, so we have some local changes aiming to push upstream
 .PHONY: update-openapi
 update-openapi:
@@ -10,7 +13,7 @@ generate: clean-generated
 	docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli:latest-release generate \
 		-i /local/openapi.yaml \
 		-g go \
-		-o /local \
+		-o /local/api \
 		--skip-validate-spec \
 		--git-host github.com \
 		--git-user-id boyvinall \
@@ -24,8 +27,9 @@ generate: clean-generated
 
 .PHONY: clean-generated
 clean-generated:
-	cat .openapi-generator/FILES | xargs rm -rf
-	find . -depth -type d -empty -delete
+	# cd api && cat .openapi-generator/FILES | xargs rm -rf
+	# find api -depth -type d -empty -delete
+	rm -rf api
 
 .PHONY: show-config-help
 show-config-help:

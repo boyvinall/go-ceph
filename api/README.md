@@ -407,11 +407,7 @@ Class | Method | HTTP request | Description
  - [ApiAuthPost201Response](docs/ApiAuthPost201Response.md)
  - [ApiAuthPost201ResponsePermissions](docs/ApiAuthPost201ResponsePermissions.md)
  - [ApiAuthPostRequest](docs/ApiAuthPostRequest.md)
- - [ApiBlockImageGet200ResponseInner](docs/ApiBlockImageGet200ResponseInner.md)
  - [ApiBlockImageImageSpecCopyPostRequest](docs/ApiBlockImageImageSpecCopyPostRequest.md)
- - [ApiBlockImageImageSpecGet200Response](docs/ApiBlockImageImageSpecGet200Response.md)
- - [ApiBlockImageImageSpecGet200ResponseConfigurationInner](docs/ApiBlockImageImageSpecGet200ResponseConfigurationInner.md)
- - [ApiBlockImageImageSpecGet200ResponseSnapshotsInner](docs/ApiBlockImageImageSpecGet200ResponseSnapshotsInner.md)
  - [ApiBlockImageImageSpecMoveTrashPostRequest](docs/ApiBlockImageImageSpecMoveTrashPostRequest.md)
  - [ApiBlockImageImageSpecPutRequest](docs/ApiBlockImageImageSpecPutRequest.md)
  - [ApiBlockImageImageSpecSnapPostRequest](docs/ApiBlockImageImageSpecSnapPostRequest.md)
@@ -640,6 +636,9 @@ Class | Method | HTTP request | Description
  - [ApiUserUsernameChangePasswordPostRequest](docs/ApiUserUsernameChangePasswordPostRequest.md)
  - [ApiUserUsernamePutRequest](docs/ApiUserUsernamePutRequest.md)
  - [ApiUserValidatePasswordPostRequest](docs/ApiUserValidatePasswordPostRequest.md)
+ - [RbdImage](docs/RbdImage.md)
+ - [RbdImageConfigurationInner](docs/RbdImageConfigurationInner.md)
+ - [RbdImageSnapshotsInner](docs/RbdImageSnapshotsInner.md)
 
 
 ## Documentation For Authorization

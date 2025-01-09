@@ -1,4 +1,5 @@
 .gitignore
+.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -81,11 +82,7 @@ docs/ApiAuthCheckPostRequest.md
 docs/ApiAuthPost201Response.md
 docs/ApiAuthPost201ResponsePermissions.md
 docs/ApiAuthPostRequest.md
-docs/ApiBlockImageGet200ResponseInner.md
 docs/ApiBlockImageImageSpecCopyPostRequest.md
-docs/ApiBlockImageImageSpecGet200Response.md
-docs/ApiBlockImageImageSpecGet200ResponseConfigurationInner.md
-docs/ApiBlockImageImageSpecGet200ResponseSnapshotsInner.md
 docs/ApiBlockImageImageSpecMoveTrashPostRequest.md
 docs/ApiBlockImageImageSpecPutRequest.md
 docs/ApiBlockImageImageSpecSnapPostRequest.md
@@ -355,6 +352,9 @@ docs/PrometheusAPI.md
 docs/PrometheusNotificationsAPI.md
 docs/RGWAPI.md
 docs/RbdAPI.md
+docs/RbdImage.md
+docs/RbdImageConfigurationInner.md
+docs/RbdImageSnapshotsInner.md
 docs/RbdMirroringAPI.md
 docs/RbdMirroringPoolBootstrapAPI.md
 docs/RbdMirroringPoolModeAPI.md
@@ -393,15 +393,11 @@ model__api_auth_post_201_response.go
 model__api_auth_post_201_response_permissions.go
 model__api_auth_post_request.go
 model__api_block_image__image_spec__copy_post_request.go
-model__api_block_image__image_spec__get_200_response.go
-model__api_block_image__image_spec__get_200_response_configuration_inner.go
-model__api_block_image__image_spec__get_200_response_snapshots_inner.go
 model__api_block_image__image_spec__move_trash_post_request.go
 model__api_block_image__image_spec__put_request.go
 model__api_block_image__image_spec__snap__snapshot_name__clone_post_request.go
 model__api_block_image__image_spec__snap__snapshot_name__put_request.go
 model__api_block_image__image_spec__snap_post_request.go
-model__api_block_image_get_200_response_inner.go
 model__api_block_image_post_request.go
 model__api_block_image_trash__image_id_spec__restore_post_request.go
 model__api_block_image_trash_get_200_response_inner.go
@@ -625,6 +621,9 @@ model__api_user__username__put_request.go
 model__api_user_get_200_response.go
 model__api_user_post_request.go
 model__api_user_validate_password_post_request.go
+model_rbd_image.go
+model_rbd_image_configuration_inner.go
+model_rbd_image_snapshots_inner.go
 response.go
 test/api_auth_test.go
 test/api_ceph_fs_snapshot_schedule_test.go

@@ -14,11 +14,11 @@ import (
 	"encoding/json"
 )
 
-// checks if the ApiBlockImageImageSpecGet200ResponseSnapshotsInner type satisfies the MappedNullable interface at compile time
-var _ MappedNullable = &ApiBlockImageImageSpecGet200ResponseSnapshotsInner{}
+// checks if the RbdImageSnapshotsInner type satisfies the MappedNullable interface at compile time
+var _ MappedNullable = &RbdImageSnapshotsInner{}
 
-// ApiBlockImageImageSpecGet200ResponseSnapshotsInner struct for ApiBlockImageImageSpecGet200ResponseSnapshotsInner
-type ApiBlockImageImageSpecGet200ResponseSnapshotsInner struct {
+// RbdImageSnapshotsInner struct for RbdImageSnapshotsInner
+type RbdImageSnapshotsInner struct {
 	// 
 	Id *int32 `json:"id,omitempty"`
 	// 
@@ -39,25 +39,25 @@ type ApiBlockImageImageSpecGet200ResponseSnapshotsInner struct {
 	DiskUsage *float32 `json:"disk_usage,omitempty"`
 }
 
-// NewApiBlockImageImageSpecGet200ResponseSnapshotsInner instantiates a new ApiBlockImageImageSpecGet200ResponseSnapshotsInner object
+// NewRbdImageSnapshotsInner instantiates a new RbdImageSnapshotsInner object
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewApiBlockImageImageSpecGet200ResponseSnapshotsInner() *ApiBlockImageImageSpecGet200ResponseSnapshotsInner {
-	this := ApiBlockImageImageSpecGet200ResponseSnapshotsInner{}
+func NewRbdImageSnapshotsInner() *RbdImageSnapshotsInner {
+	this := RbdImageSnapshotsInner{}
 	return &this
 }
 
-// NewApiBlockImageImageSpecGet200ResponseSnapshotsInnerWithDefaults instantiates a new ApiBlockImageImageSpecGet200ResponseSnapshotsInner object
+// NewRbdImageSnapshotsInnerWithDefaults instantiates a new RbdImageSnapshotsInner object
 // This constructor will only assign default values to properties that have it defined,
 // but it doesn't guarantee that properties required by API are set
-func NewApiBlockImageImageSpecGet200ResponseSnapshotsInnerWithDefaults() *ApiBlockImageImageSpecGet200ResponseSnapshotsInner {
-	this := ApiBlockImageImageSpecGet200ResponseSnapshotsInner{}
+func NewRbdImageSnapshotsInnerWithDefaults() *RbdImageSnapshotsInner {
+	this := RbdImageSnapshotsInner{}
 	return &this
 }
 
 // GetId returns the Id field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetId() int32 {
+func (o *RbdImageSnapshotsInner) GetId() int32 {
 	if o == nil || IsNil(o.Id) {
 		var ret int32
 		return ret
@@ -67,7 +67,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetId() int32 {
 
 // GetIdOk returns a tuple with the Id field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetIdOk() (*int32, bool) {
+func (o *RbdImageSnapshotsInner) GetIdOk() (*int32, bool) {
 	if o == nil || IsNil(o.Id) {
 		return nil, false
 	}
@@ -75,7 +75,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetIdOk() (*int32, 
 }
 
 // HasId returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasId() bool {
+func (o *RbdImageSnapshotsInner) HasId() bool {
 	if o != nil && !IsNil(o.Id) {
 		return true
 	}
@@ -84,12 +84,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasId() bool {
 }
 
 // SetId gets a reference to the given int32 and assigns it to the Id field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetId(v int32) {
+func (o *RbdImageSnapshotsInner) SetId(v int32) {
 	o.Id = &v
 }
 
 // GetSize returns the Size field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetSize() float32 {
+func (o *RbdImageSnapshotsInner) GetSize() float32 {
 	if o == nil || IsNil(o.Size) {
 		var ret float32
 		return ret
@@ -99,7 +99,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetSize() float32 {
 
 // GetSizeOk returns a tuple with the Size field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetSizeOk() (*float32, bool) {
+func (o *RbdImageSnapshotsInner) GetSizeOk() (*float32, bool) {
 	if o == nil || IsNil(o.Size) {
 		return nil, false
 	}
@@ -107,7 +107,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetSizeOk() (*float
 }
 
 // HasSize returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasSize() bool {
+func (o *RbdImageSnapshotsInner) HasSize() bool {
 	if o != nil && !IsNil(o.Size) {
 		return true
 	}
@@ -116,12 +116,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasSize() bool {
 }
 
 // SetSize gets a reference to the given float32 and assigns it to the Size field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetSize(v float32) {
+func (o *RbdImageSnapshotsInner) SetSize(v float32) {
 	o.Size = &v
 }
 
 // GetName returns the Name field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetName() string {
+func (o *RbdImageSnapshotsInner) GetName() string {
 	if o == nil || IsNil(o.Name) {
 		var ret string
 		return ret
@@ -131,7 +131,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetName() string {
 
 // GetNameOk returns a tuple with the Name field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetNameOk() (*string, bool) {
+func (o *RbdImageSnapshotsInner) GetNameOk() (*string, bool) {
 	if o == nil || IsNil(o.Name) {
 		return nil, false
 	}
@@ -139,7 +139,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetNameOk() (*strin
 }
 
 // HasName returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasName() bool {
+func (o *RbdImageSnapshotsInner) HasName() bool {
 	if o != nil && !IsNil(o.Name) {
 		return true
 	}
@@ -148,12 +148,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasName() bool {
 }
 
 // SetName gets a reference to the given string and assigns it to the Name field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetName(v string) {
+func (o *RbdImageSnapshotsInner) SetName(v string) {
 	o.Name = &v
 }
 
 // GetNamespace returns the Namespace field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetNamespace() int32 {
+func (o *RbdImageSnapshotsInner) GetNamespace() int32 {
 	if o == nil || IsNil(o.Namespace) {
 		var ret int32
 		return ret
@@ -163,7 +163,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetNamespace() int3
 
 // GetNamespaceOk returns a tuple with the Namespace field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetNamespaceOk() (*int32, bool) {
+func (o *RbdImageSnapshotsInner) GetNamespaceOk() (*int32, bool) {
 	if o == nil || IsNil(o.Namespace) {
 		return nil, false
 	}
@@ -171,7 +171,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetNamespaceOk() (*
 }
 
 // HasNamespace returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasNamespace() bool {
+func (o *RbdImageSnapshotsInner) HasNamespace() bool {
 	if o != nil && !IsNil(o.Namespace) {
 		return true
 	}
@@ -180,12 +180,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasNamespace() bool
 }
 
 // SetNamespace gets a reference to the given int32 and assigns it to the Namespace field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetNamespace(v int32) {
+func (o *RbdImageSnapshotsInner) SetNamespace(v int32) {
 	o.Namespace = &v
 }
 
 // GetTimestamp returns the Timestamp field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetTimestamp() string {
+func (o *RbdImageSnapshotsInner) GetTimestamp() string {
 	if o == nil || IsNil(o.Timestamp) {
 		var ret string
 		return ret
@@ -195,7 +195,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetTimestamp() stri
 
 // GetTimestampOk returns a tuple with the Timestamp field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetTimestampOk() (*string, bool) {
+func (o *RbdImageSnapshotsInner) GetTimestampOk() (*string, bool) {
 	if o == nil || IsNil(o.Timestamp) {
 		return nil, false
 	}
@@ -203,7 +203,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetTimestampOk() (*
 }
 
 // HasTimestamp returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasTimestamp() bool {
+func (o *RbdImageSnapshotsInner) HasTimestamp() bool {
 	if o != nil && !IsNil(o.Timestamp) {
 		return true
 	}
@@ -212,12 +212,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasTimestamp() bool
 }
 
 // SetTimestamp gets a reference to the given string and assigns it to the Timestamp field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetTimestamp(v string) {
+func (o *RbdImageSnapshotsInner) SetTimestamp(v string) {
 	o.Timestamp = &v
 }
 
 // GetIsProtected returns the IsProtected field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetIsProtected() bool {
+func (o *RbdImageSnapshotsInner) GetIsProtected() bool {
 	if o == nil || IsNil(o.IsProtected) {
 		var ret bool
 		return ret
@@ -227,7 +227,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetIsProtected() bo
 
 // GetIsProtectedOk returns a tuple with the IsProtected field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetIsProtectedOk() (*bool, bool) {
+func (o *RbdImageSnapshotsInner) GetIsProtectedOk() (*bool, bool) {
 	if o == nil || IsNil(o.IsProtected) {
 		return nil, false
 	}
@@ -235,7 +235,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetIsProtectedOk() 
 }
 
 // HasIsProtected returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasIsProtected() bool {
+func (o *RbdImageSnapshotsInner) HasIsProtected() bool {
 	if o != nil && !IsNil(o.IsProtected) {
 		return true
 	}
@@ -244,12 +244,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasIsProtected() bo
 }
 
 // SetIsProtected gets a reference to the given bool and assigns it to the IsProtected field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetIsProtected(v bool) {
+func (o *RbdImageSnapshotsInner) SetIsProtected(v bool) {
 	o.IsProtected = &v
 }
 
 // GetUsedBytes returns the UsedBytes field value if set, zero value otherwise (both if not set or set to explicit null).
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetUsedBytes() int32 {
+func (o *RbdImageSnapshotsInner) GetUsedBytes() int32 {
 	if o == nil || IsNil(o.UsedBytes.Get()) {
 		var ret int32
 		return ret
@@ -260,7 +260,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetUsedBytes() int3
 // GetUsedBytesOk returns a tuple with the UsedBytes field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 // NOTE: If the value is an explicit nil, `nil, true` will be returned
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetUsedBytesOk() (*int32, bool) {
+func (o *RbdImageSnapshotsInner) GetUsedBytesOk() (*int32, bool) {
 	if o == nil {
 		return nil, false
 	}
@@ -268,7 +268,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetUsedBytesOk() (*
 }
 
 // HasUsedBytes returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasUsedBytes() bool {
+func (o *RbdImageSnapshotsInner) HasUsedBytes() bool {
 	if o != nil && o.UsedBytes.IsSet() {
 		return true
 	}
@@ -277,21 +277,21 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasUsedBytes() bool
 }
 
 // SetUsedBytes gets a reference to the given NullableInt32 and assigns it to the UsedBytes field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetUsedBytes(v int32) {
+func (o *RbdImageSnapshotsInner) SetUsedBytes(v int32) {
 	o.UsedBytes.Set(&v)
 }
 // SetUsedBytesNil sets the value for UsedBytes to be an explicit nil
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetUsedBytesNil() {
+func (o *RbdImageSnapshotsInner) SetUsedBytesNil() {
 	o.UsedBytes.Set(nil)
 }
 
 // UnsetUsedBytes ensures that no value is present for UsedBytes, not even an explicit nil
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) UnsetUsedBytes() {
+func (o *RbdImageSnapshotsInner) UnsetUsedBytes() {
 	o.UsedBytes.Unset()
 }
 
 // GetChildren returns the Children field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetChildren() []int32 {
+func (o *RbdImageSnapshotsInner) GetChildren() []int32 {
 	if o == nil || IsNil(o.Children) {
 		var ret []int32
 		return ret
@@ -301,7 +301,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetChildren() []int
 
 // GetChildrenOk returns a tuple with the Children field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetChildrenOk() ([]int32, bool) {
+func (o *RbdImageSnapshotsInner) GetChildrenOk() ([]int32, bool) {
 	if o == nil || IsNil(o.Children) {
 		return nil, false
 	}
@@ -309,7 +309,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetChildrenOk() ([]
 }
 
 // HasChildren returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasChildren() bool {
+func (o *RbdImageSnapshotsInner) HasChildren() bool {
 	if o != nil && !IsNil(o.Children) {
 		return true
 	}
@@ -318,12 +318,12 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasChildren() bool 
 }
 
 // SetChildren gets a reference to the given []int32 and assigns it to the Children field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetChildren(v []int32) {
+func (o *RbdImageSnapshotsInner) SetChildren(v []int32) {
 	o.Children = v
 }
 
 // GetDiskUsage returns the DiskUsage field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetDiskUsage() float32 {
+func (o *RbdImageSnapshotsInner) GetDiskUsage() float32 {
 	if o == nil || IsNil(o.DiskUsage) {
 		var ret float32
 		return ret
@@ -333,7 +333,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetDiskUsage() floa
 
 // GetDiskUsageOk returns a tuple with the DiskUsage field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetDiskUsageOk() (*float32, bool) {
+func (o *RbdImageSnapshotsInner) GetDiskUsageOk() (*float32, bool) {
 	if o == nil || IsNil(o.DiskUsage) {
 		return nil, false
 	}
@@ -341,7 +341,7 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) GetDiskUsageOk() (*
 }
 
 // HasDiskUsage returns a boolean if a field has been set.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasDiskUsage() bool {
+func (o *RbdImageSnapshotsInner) HasDiskUsage() bool {
 	if o != nil && !IsNil(o.DiskUsage) {
 		return true
 	}
@@ -350,11 +350,11 @@ func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) HasDiskUsage() bool
 }
 
 // SetDiskUsage gets a reference to the given float32 and assigns it to the DiskUsage field.
-func (o *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) SetDiskUsage(v float32) {
+func (o *RbdImageSnapshotsInner) SetDiskUsage(v float32) {
 	o.DiskUsage = &v
 }
 
-func (o ApiBlockImageImageSpecGet200ResponseSnapshotsInner) MarshalJSON() ([]byte, error) {
+func (o RbdImageSnapshotsInner) MarshalJSON() ([]byte, error) {
 	toSerialize,err := o.ToMap()
 	if err != nil {
 		return []byte{}, err
@@ -362,7 +362,7 @@ func (o ApiBlockImageImageSpecGet200ResponseSnapshotsInner) MarshalJSON() ([]byt
 	return json.Marshal(toSerialize)
 }
 
-func (o ApiBlockImageImageSpecGet200ResponseSnapshotsInner) ToMap() (map[string]interface{}, error) {
+func (o RbdImageSnapshotsInner) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	if !IsNil(o.Id) {
 		toSerialize["id"] = o.Id
@@ -394,38 +394,38 @@ func (o ApiBlockImageImageSpecGet200ResponseSnapshotsInner) ToMap() (map[string]
 	return toSerialize, nil
 }
 
-type NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner struct {
-	value *ApiBlockImageImageSpecGet200ResponseSnapshotsInner
+type NullableRbdImageSnapshotsInner struct {
+	value *RbdImageSnapshotsInner
 	isSet bool
 }
 
-func (v NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner) Get() *ApiBlockImageImageSpecGet200ResponseSnapshotsInner {
+func (v NullableRbdImageSnapshotsInner) Get() *RbdImageSnapshotsInner {
 	return v.value
 }
 
-func (v *NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner) Set(val *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) {
+func (v *NullableRbdImageSnapshotsInner) Set(val *RbdImageSnapshotsInner) {
 	v.value = val
 	v.isSet = true
 }
 
-func (v NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner) IsSet() bool {
+func (v NullableRbdImageSnapshotsInner) IsSet() bool {
 	return v.isSet
 }
 
-func (v *NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner) Unset() {
+func (v *NullableRbdImageSnapshotsInner) Unset() {
 	v.value = nil
 	v.isSet = false
 }
 
-func NewNullableApiBlockImageImageSpecGet200ResponseSnapshotsInner(val *ApiBlockImageImageSpecGet200ResponseSnapshotsInner) *NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner {
-	return &NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner{value: val, isSet: true}
+func NewNullableRbdImageSnapshotsInner(val *RbdImageSnapshotsInner) *NullableRbdImageSnapshotsInner {
+	return &NullableRbdImageSnapshotsInner{value: val, isSet: true}
 }
 
-func (v NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner) MarshalJSON() ([]byte, error) {
+func (v NullableRbdImageSnapshotsInner) MarshalJSON() ([]byte, error) {
 	return json.Marshal(v.value)
 }
 
-func (v *NullableApiBlockImageImageSpecGet200ResponseSnapshotsInner) UnmarshalJSON(src []byte) error {
+func (v *NullableRbdImageSnapshotsInner) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }

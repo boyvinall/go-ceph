@@ -1,4 +1,4 @@
-# ApiBlockImageImageSpecGet200ResponseConfigurationInner
+# RbdImageConfigurationInner
 
 ## Properties
 
@@ -10,95 +10,95 @@ Name | Type | Description | Notes
 
 ## Methods
 
-### NewApiBlockImageImageSpecGet200ResponseConfigurationInner
+### NewRbdImageConfigurationInner
 
-`func NewApiBlockImageImageSpecGet200ResponseConfigurationInner() *ApiBlockImageImageSpecGet200ResponseConfigurationInner`
+`func NewRbdImageConfigurationInner() *RbdImageConfigurationInner`
 
-NewApiBlockImageImageSpecGet200ResponseConfigurationInner instantiates a new ApiBlockImageImageSpecGet200ResponseConfigurationInner object
+NewRbdImageConfigurationInner instantiates a new RbdImageConfigurationInner object
 This constructor will assign default values to properties that have it defined,
 and makes sure properties required by API are set, but the set of arguments
 will change when the set of required properties is changed
 
-### NewApiBlockImageImageSpecGet200ResponseConfigurationInnerWithDefaults
+### NewRbdImageConfigurationInnerWithDefaults
 
-`func NewApiBlockImageImageSpecGet200ResponseConfigurationInnerWithDefaults() *ApiBlockImageImageSpecGet200ResponseConfigurationInner`
+`func NewRbdImageConfigurationInnerWithDefaults() *RbdImageConfigurationInner`
 
-NewApiBlockImageImageSpecGet200ResponseConfigurationInnerWithDefaults instantiates a new ApiBlockImageImageSpecGet200ResponseConfigurationInner object
+NewRbdImageConfigurationInnerWithDefaults instantiates a new RbdImageConfigurationInner object
 This constructor will only assign default values to properties that have it defined,
 but it doesn't guarantee that properties required by API are set
 
 ### GetName
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) GetName() string`
+`func (o *RbdImageConfigurationInner) GetName() string`
 
 GetName returns the Name field if non-nil, zero value otherwise.
 
 ### GetNameOk
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) GetNameOk() (*string, bool)`
+`func (o *RbdImageConfigurationInner) GetNameOk() (*string, bool)`
 
 GetNameOk returns a tuple with the Name field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetName
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) SetName(v string)`
+`func (o *RbdImageConfigurationInner) SetName(v string)`
 
 SetName sets Name field to given value.
 
 ### HasName
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) HasName() bool`
+`func (o *RbdImageConfigurationInner) HasName() bool`
 
 HasName returns a boolean if a field has been set.
 
 ### GetValue
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) GetValue() string`
+`func (o *RbdImageConfigurationInner) GetValue() string`
 
 GetValue returns the Value field if non-nil, zero value otherwise.
 
 ### GetValueOk
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) GetValueOk() (*string, bool)`
+`func (o *RbdImageConfigurationInner) GetValueOk() (*string, bool)`
 
 GetValueOk returns a tuple with the Value field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetValue
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) SetValue(v string)`
+`func (o *RbdImageConfigurationInner) SetValue(v string)`
 
 SetValue sets Value field to given value.
 
 ### HasValue
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) HasValue() bool`
+`func (o *RbdImageConfigurationInner) HasValue() bool`
 
 HasValue returns a boolean if a field has been set.
 
 ### GetSource
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) GetSource() int32`
+`func (o *RbdImageConfigurationInner) GetSource() int32`
 
 GetSource returns the Source field if non-nil, zero value otherwise.
 
 ### GetSourceOk
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) GetSourceOk() (*int32, bool)`
+`func (o *RbdImageConfigurationInner) GetSourceOk() (*int32, bool)`
 
 GetSourceOk returns a tuple with the Source field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetSource
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) SetSource(v int32)`
+`func (o *RbdImageConfigurationInner) SetSource(v int32)`
 
 SetSource sets Source field to given value.
 
 ### HasSource
 
-`func (o *ApiBlockImageImageSpecGet200ResponseConfigurationInner) HasSource() bool`
+`func (o *RbdImageConfigurationInner) HasSource() bool`
 
 HasSource returns a boolean if a field has been set.
 

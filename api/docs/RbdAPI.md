@@ -135,7 +135,7 @@ Other parameters are passed through a pointer to a apiApiBlockImageDefaultFeatur
 
 ## ApiBlockImageGet
 
-> []ApiBlockImageGet200ResponseInner ApiBlockImageGet(ctx).PoolName(poolName).Offset(offset).Limit(limit).Search(search).Sort(sort).Execute()
+> []RbdImage ApiBlockImageGet(ctx).PoolName(poolName).Offset(offset).Limit(limit).Search(search).Sort(sort).Execute()
 
 Display Rbd Images
 
@@ -165,7 +165,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error when calling `RbdAPI.ApiBlockImageGet``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
 	}
-	// response from `ApiBlockImageGet`: []ApiBlockImageGet200ResponseInner
+	// response from `ApiBlockImageGet`: []RbdImage
 	fmt.Fprintf(os.Stdout, "Response from `RbdAPI.ApiBlockImageGet`: %v\n", resp)
 }
 ```
@@ -189,7 +189,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]ApiBlockImageGet200ResponseInner**](ApiBlockImageGet200ResponseInner.md)
+[**[]RbdImage**](RbdImage.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: application/vnd.ceph.api.v2.0+json
+- **Accept**: application/vnd.ceph.api.v1.0+json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
 [[Back to Model list]](../README.md#documentation-for-models)
@@ -407,7 +407,7 @@ Name | Type | Description  | Notes
 
 ## ApiBlockImageImageSpecGet
 
-> ApiBlockImageImageSpecGet200Response ApiBlockImageImageSpecGet(ctx, imageSpec).OmitUsage(omitUsage).Execute()
+> RbdImage ApiBlockImageImageSpecGet(ctx, imageSpec).OmitUsage(omitUsage).Execute()
 
 Get Rbd Image Info
 
@@ -434,7 +434,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error when calling `RbdAPI.ApiBlockImageImageSpecGet``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
 	}
-	// response from `ApiBlockImageImageSpecGet`: ApiBlockImageImageSpecGet200Response
+	// response from `ApiBlockImageImageSpecGet`: RbdImage
 	fmt.Fprintf(os.Stdout, "Response from `RbdAPI.ApiBlockImageImageSpecGet`: %v\n", resp)
 }
 ```
@@ -459,7 +459,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ApiBlockImageImageSpecGet200Response**](ApiBlockImageImageSpecGet200Response.md)
+[**RbdImage**](RbdImage.md)
 
 ### Authorization
 
