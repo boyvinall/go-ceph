@@ -1,4 +1,4 @@
-# Go API client for ceph [![Go Reference](https://pkg.go.dev/badge/github.com/boyvinall/go-ceph.svg)](https://pkg.go.dev/github.com/boyvinall/go-ceph)
+# Go API client for ceph [![Go Reference](https://pkg.go.dev/badge/github.com/boyvinall/go-ceph/api.svg)](https://pkg.go.dev/github.com/boyvinall/go-ceph/api)
 
 This is the official Ceph REST API
 
@@ -22,7 +22,7 @@ go get golang.org/x/net/context
 Put the package under your project folder and add the following in import:
 
 ```go
-import ceph "github.com/boyvinall/go-ceph"
+import ceph "github.com/boyvinall/go-ceph/api"
 ```
 
 To use a proxy, set the environment variable `HTTP_PROXY`:

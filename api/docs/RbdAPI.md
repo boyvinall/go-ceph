@@ -34,7 +34,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -91,7 +91,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -148,7 +148,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -220,7 +220,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -288,7 +288,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -354,7 +354,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -420,7 +420,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -492,7 +492,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -560,7 +560,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {
@@ -628,7 +628,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func main() {

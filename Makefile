@@ -17,7 +17,7 @@ generate: clean-generated
 		--skip-validate-spec \
 		--git-host github.com \
 		--git-user-id boyvinall \
-		--git-repo-id go-ceph \
+		--git-repo-id go-ceph/api \
 		--package-name ceph \
 		-t /local/templates \
 		--additional-properties=withGoMod=false \

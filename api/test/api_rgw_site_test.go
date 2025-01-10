@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/boyvinall/go-ceph"
+	openapiclient "github.com/boyvinall/go-ceph/api"
 )
 
 func Test_ceph_RgwSiteAPIService(t *testing.T) {
