@@ -21,7 +21,7 @@ var _ MappedNullable = &ApiBlockImageImageSpecPutRequest{}
 type ApiBlockImageImageSpecPutRequest struct {
 	Configuration *string `json:"configuration,omitempty"`
 	EnableMirror *string `json:"enable_mirror,omitempty"`
-	Features *string `json:"features,omitempty"`
+	Features []string `json:"features,omitempty"`
 	Force *bool `json:"force,omitempty"`
 	ImageMirrorMode *string `json:"image_mirror_mode,omitempty"`
 	Metadata *string `json:"metadata,omitempty"`
@@ -132,17 +132,17 @@ func (o *ApiBlockImageImageSpecPutRequest) SetEnableMirror(v string) {
 }
 
 // GetFeatures returns the Features field value if set, zero value otherwise.
-func (o *ApiBlockImageImageSpecPutRequest) GetFeatures() string {
+func (o *ApiBlockImageImageSpecPutRequest) GetFeatures() []string {
 	if o == nil || IsNil(o.Features) {
-		var ret string
+		var ret []string
 		return ret
 	}
-	return *o.Features
+	return o.Features
 }
 
 // GetFeaturesOk returns a tuple with the Features field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *ApiBlockImageImageSpecPutRequest) GetFeaturesOk() (*string, bool) {
+func (o *ApiBlockImageImageSpecPutRequest) GetFeaturesOk() ([]string, bool) {
 	if o == nil || IsNil(o.Features) {
 		return nil, false
 	}
@@ -158,9 +158,9 @@ func (o *ApiBlockImageImageSpecPutRequest) HasFeatures() bool {
 	return false
 }
 
-// SetFeatures gets a reference to the given string and assigns it to the Features field.
-func (o *ApiBlockImageImageSpecPutRequest) SetFeatures(v string) {
-	o.Features = &v
+// SetFeatures gets a reference to the given []string and assigns it to the Features field.
+func (o *ApiBlockImageImageSpecPutRequest) SetFeatures(v []string) {
+	o.Features = v
 }
 
 // GetForce returns the Force field value if set, zero value otherwise.

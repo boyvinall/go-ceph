@@ -11406,7 +11406,9 @@ components:
         enable_mirror:
           type: string
         features:
-          type: string
+          items:
+            type: string
+          type: array
         force:
           default: false
           type: boolean

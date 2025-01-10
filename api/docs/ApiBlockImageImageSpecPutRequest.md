@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Configuration** | Pointer to **string** |  | [optional] 
 **EnableMirror** | Pointer to **string** |  | [optional] 
-**Features** | Pointer to **string** |  | [optional] 
+**Features** | Pointer to **[]string** |  | [optional] 
 **Force** | Pointer to **bool** |  | [optional] [default to false]
 **ImageMirrorMode** | Pointer to **string** |  | [optional] 
 **Metadata** | Pointer to **string** |  | [optional] 
@@ -89,20 +89,20 @@ HasEnableMirror returns a boolean if a field has been set.
 
 ### GetFeatures
 
-`func (o *ApiBlockImageImageSpecPutRequest) GetFeatures() string`
+`func (o *ApiBlockImageImageSpecPutRequest) GetFeatures() []string`
 
 GetFeatures returns the Features field if non-nil, zero value otherwise.
 
 ### GetFeaturesOk
 
-`func (o *ApiBlockImageImageSpecPutRequest) GetFeaturesOk() (*string, bool)`
+`func (o *ApiBlockImageImageSpecPutRequest) GetFeaturesOk() (*[]string, bool)`
 
 GetFeaturesOk returns a tuple with the Features field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetFeatures
 
-`func (o *ApiBlockImageImageSpecPutRequest) SetFeatures(v string)`
+`func (o *ApiBlockImageImageSpecPutRequest) SetFeatures(v []string)`
 
 SetFeatures sets Features field to given value.
 
